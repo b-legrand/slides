@@ -6,15 +6,15 @@ Everything is markdown, notation is strict (one line return = new slide stack, t
 
 ## Install
 
-1. clone and install reveal.js repository
+#### 1. clone and install reveal.js repository
 
    git clone git@github.com:hakimel/reveal.js.git reveal
 
-2. copy source presentation files
+#### 2. copy source presentation files
 
    cp \*.md reveal/
 
-3. edit reveal/index.html
+#### 3. edit reveal/index.html
 
 add markdown external https://github.com/hakimel/reveal.js#external-markdown
 
@@ -35,7 +35,7 @@ add markdown external https://github.com/hakimel/reveal.js#external-markdown
 </section>
 ```
 
-4. install and start reveal
+#### 4. install and start reveal
 
 ```
 cd reveal/
@@ -43,7 +43,7 @@ npm i
 npm start
 ```
 
-5. present
+#### 5. speak
 * go to http://localhost:8000/
 * press `s` key to open a presenter mode
 
@@ -53,10 +53,3 @@ how to edit, recommanded tools :
 
 VSCode + Markdown editor enheanced :
 
-##
-
-start
-
-cd reveal/
-
-cp ../\*.md .
