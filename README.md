@@ -12,7 +12,9 @@ Everything is markdown, notation is strict (one line return = new slide stack, t
 
 #### 2. copy source presentation files
 
-   cp \*.md reveal/
+copy talks directory in reveal/
+
+   cp talks reveal/
 
 #### 3. edit reveal/index.html
 
@@ -22,7 +24,7 @@ add markdown external https://github.com/hakimel/reveal.js#external-markdown
 
 ```html
 <section
-  data-markdown="ANGULAR.md"
+  data-markdown="talks/ANGULAR.md"
   data-separator="^\n\n\n"
   data-separator-vertical="^\n\n"
   data-separator-notes="^Note:"
