@@ -1,2 +1,4 @@
 reveal/**
 ^reveal/talks
+node_modules
+dist
