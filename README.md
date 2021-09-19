@@ -6,34 +6,32 @@ Everything is markdown, notation is strict (one line return = new slide stack, t
 
 ## Install
 
-#### 1. clone and install reveal.js repository
+#### 1. clone and install this repository
 
-   git clone git@github.com:hakimel/reveal.js.git reveal
+  npm install
 
 #### 2. copy source presentation files
 
-copy talks directory in reveal/
+edit or add a markdown file in [talks/](./talks/) directory
 
-   cp talks reveal/
+- 2 empty lines separate vertical slides
+- 3 empty lines separate horizontal slides
+- add Note: to separate between slide and empty note.
 
-#### 3. edit reveal/index.html
+#### 3. edit src/index.html
 
 add markdown external https://github.com/hakimel/reveal.js#external-markdown
 
-    replace the content of`<div class="slides">` with this:
+    replace the `data-markdown` of`<div class="slides">` with the reference to your file:
 
 ```html
 <section
-  data-markdown="talks/ANGULAR.md"
+  data-markdown="/talks/ANGULAR.md"
   data-separator="^\n\n\n"
   data-separator-vertical="^\n\n"
   data-separator-notes="^Note:"
   data-charset="UTF-8"
 >
-  <!--
-        Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
-        For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
-    -->
 </section>
 ```
 
@@ -51,7 +49,7 @@ npm start
 
 ## Edit
 
-how to edit, recommanded tools :
+how to edit, recommended tools :
 
-VSCode + Markdown editor enheanced :
+VSCode + Markdown editor enhanced :
 
