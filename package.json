@@ -4,8 +4,10 @@
   "description": "this is a repository to store my presentations/talks/brownbaglunch made with [reveal.js](https://github.com/hakimel/reveal.js)",
   "main": "index.js",
   "scripts": {
+    "serve": "webpack serve --hot --mode=development",
     "start": "http-server dist/",
-    "build": "webpack build --mode=production"
+    "build": "webpack build --mode=production",
+    "prestart": "npm run build"
   },
   "repository": {
     "type": "git",
