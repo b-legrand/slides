@@ -8,7 +8,7 @@ import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/black.css";
 import "reveal.js/plugin/highlight/monokai.css";
 
-let deck = new Reveal({
+let deck = Reveal({
   plugins: [Markdown, Highlight, Notes],
 });
 
@@ -18,5 +18,5 @@ deck.initialize({
    history: true,
    center: true,
    // default/cube/page/concave/zoom/linear/fade/none
-   // transition: 'none',
+   transition: 'default',
  });

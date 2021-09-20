@@ -10,7 +10,6 @@ const config: webpack.Configuration = {
     filename: "[name].bundle.js",
   },
   resolve: {
-    alias: { reveal: "reveal.js" },
     // Add `.ts` and `.tsx` as a resolvable extension.
     extensions: [".ts", ".tsx", ".js"],
   },
@@ -26,6 +25,7 @@ const config: webpack.Configuration = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      title: "KT Performance",
     }),
     new CopyWebpackPlugin({
       patterns: [
